@@ -102,7 +102,7 @@ router.get('/api/checklogin', (req, res, next) => {
       return;
     }
 
-    res.status(403).json({ message: 'Unauthorized' });
+    res.status(401).json({ message: 'Unauthorized' });
 });
 
 
