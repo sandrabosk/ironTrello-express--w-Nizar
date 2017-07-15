@@ -49,9 +49,6 @@ app.use(cors({
 
 
 // ROUTES GO HERE --------------------------------------------------------------
-const index = require('./routes/index');
-app.use('/', index);
-
 const myAuthStuff = require('./routes/auth-api-routes');
 app.use('/', myAuthStuff);
 
