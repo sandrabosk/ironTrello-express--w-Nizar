@@ -11,6 +11,10 @@ const myListSchema = new Schema(
       required: true
     },
     position: { type: Number },
+    owner: {
+      type: Schema.Types.ObjectId,
+      ref: 'User'
+    },
     cards: [
       {
         type: Schema.Types.ObjectId,
