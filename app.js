@@ -14,7 +14,8 @@ require('dotenv').config();
 
 require('./config/passport-config');
 
-mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect('mongodb://localhost/irontrello-express'); // this is hardcoded that's why needs to be replaced
 
 const app = express();
 
